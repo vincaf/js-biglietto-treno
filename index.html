@@ -10,22 +10,33 @@
     <title>Biglietto Treno</title>
 </head>
 <body>
-    <div class="container mt-2">
-        <h1>Calcolo prezzo biglietto treno</h1>
-        <p>Il prezzo totale del biglietto sarà caricato secondo queste regole</p>
-        <ul>
-            <li>il prezzo del biglietto è definito in base ai km (0.21 € al km)</li>
-            <li>va applicato uno sconto del 20% per i minorenni</li>
-            <li>va applicato uno sconto del 40% per gli over 65.</li>
-        </ul>
-        <div class="fw-bold">I tuoi dati:</div>
-        <div>
-            <span id="userKm"></span><span> Km da percorrere</span>
-        </div>
-        <div>
-            <span id="userAge"></span><span> Anni</span>
-        </div>
-        <div class="fw-bold mt-2">Prezzo Biglietto: <span id="userTicket"></span><span>€</span></div>
+    <div class="container mt-3">
+        <header>
+            <h1>Biglietto Treno <i class="bi bi-ticket-perforated-fill"></i></h1>
+            <p>Il prezzo totale del biglietto sarà caricato secondo queste regole</p>
+            <ul>
+                <li>il prezzo del biglietto è definito in base ai km (0.21 € al km)</li>
+                <li>va applicato uno sconto del 20% per i minorenni</li>
+                <li>va applicato uno sconto del 40% per gli over 65.</li>
+            </ul>
+        </header>
+        <main class="mt-3">
+            <div class="row row-cols-1 row-cols-md-2 justify-content-center">
+                <div class="col">
+                    <div class="fw-bold">I tuoi dati:</div>
+                    <div>
+                        <span id="userKm"></span><span> Km da percorrere</span>
+                    </div>
+                    <div>
+                        <span id="userAge"></span><span> Anni</span>
+                    </div>
+                    <div class="fw-bold mt-2">Prezzo Biglietto: <span id="userTicket"></span><span>€</span></div>
+                </div>
+                <div class="col-3 justify-content-end">
+                    <img src="https://i.ibb.co/KFLjqyg/qr-code-train.png" alt="qr-code">
+                </div>
+            </div>
+        </main>
     </div>
     
     <script src="script.js"></script>

@@ -14,10 +14,10 @@ console.log(userTicket);
 
 // Condizione per ricevere lo sconto sul biglietto in base all'età
 if (userAge < 18) {
-    userTicket = (userTicket - ( (userTicket * 20) / 100 ) );
+    userTicket = (userTicket - userTicket * 20 / 100);
     console.log(`Sconto 20% per minorenni ${userTicket}`);
 } else if (userAge > 65) {
-    userTicket = (userTicket - ( (userTicket * 40) / 100 ) );
+    userTicket = (userTicket - userTicket * 40 / 100 );
     console.log(`Sconto 40% per over65 ${userTicket}`);
 }
 

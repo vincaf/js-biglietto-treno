@@ -1,0 +1,17 @@
+header{
+    background-color: #c03;
+    color: #fff;
+    width: 500px;
+    padding: 10px;
+}
+
+main{
+    width: 500px;
+    border: 5px dashed #006c67;
+    border-left: 30px solid #006c67;
+    padding: 10px;
+}
+
+main img{
+    width: 100px;
+}
