@@ -15,6 +15,7 @@ console.log(userTicket);
 // Dichiarazione variabile di sconto da applicare
 let reductionTicket;
 
+// Condizione per ricevere lo sconto sul biglietto in base all'età
 if (userAge < 18) {
     reductionTicket = ( (userTicket * 20) / 100 );
     userTicket = (userTicket - reductionTicket);
@@ -24,4 +25,9 @@ if (userAge < 18) {
     userTicket = (userTicket - reductionTicket);
     console.log(userTicket);
 }
+
+// Arrotondamento del prezzo biglietto a due cifre decimali
+userTicket = userTicket.toFixed(2);
+
+
 
