@@ -29,5 +29,8 @@ if (userAge < 18) {
 // Arrotondamento del prezzo biglietto a due cifre decimali
 userTicket = userTicket.toFixed(2);
 
-
+// Scrittura delle variabili sulla pagina
+document.getElementById('userKm').innerHTML = userKm;
+document.getElementById('userAge').innerHTML = userAge;
+document.getElementById('userTicket').innerHTML = userTicket;
 
